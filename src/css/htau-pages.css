@@ -1,0 +1,129 @@
+.auth-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%; }
+  
+  .auth-wrapper .auth-inner {
+    width: 100%; }
+  
+  .auth-wrapper.auth-basic {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+  
+  .auth-wrapper.auth-basic .auth-inner {
+    position: relative; }
+  
+  .auth-wrapper.auth-basic .auth-inner:before {
+    width: 244px;
+    height: 243px;
+    content: ' ';
+    position: absolute;
+    top: -54px;
+    left: -46px;
+    background-image: url(""); }
+  
+  @media (max-width: 575.98px) {
+    .auth-wrapper.auth-basic .auth-inner:before {
+      display: none; } }
+  
+  .auth-wrapper.auth-basic .auth-inner:after {
+    width: 272px;
+    height: 272px;
+    content: ' ';
+    position: absolute;
+    bottom: -55px;
+    right: -75px;
+    background-image: url("");
+    z-index: -1; }
+  
+  @media (max-width: 575.98px) {
+    .auth-wrapper.auth-basic .auth-inner:after {
+      display: none; } }
+  
+  .auth-wrapper.auth-cover {
+    align-items: flex-start; }
+  
+  .auth-wrapper.auth-cover .auth-inner {
+    height: 100vh;
+    overflow-y: auto;
+    height: calc(var(--vh, 1vh) * 100); }
+  
+  .auth-wrapper.auth-cover .brand-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    margin: 0;
+    z-index: 1;
+    justify-content: unset; }
+  
+  .auth-wrapper.auth-basic .auth-inner {
+    max-width: 400px; }
+  
+  .auth-wrapper .brand-logo {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0; }
+  
+  .auth-wrapper .brand-logo .brand-text {
+    font-weight: 600; }
+  
+  .auth-wrapper .auth-footer-btn .btn {
+    padding: 0.6rem !important; }
+  
+  .auth-wrapper .auth-footer-btn .btn:not(:last-child) {
+    margin-right: 1rem; }
+  
+  .auth-wrapper .auth-footer-btn .btn:focus {
+    box-shadow: none; }
+  
+  .auth-wrapper .auth-input {
+    max-width: 50px;
+    padding-right: 0.571rem;
+    padding-left: 0.571rem; }
+  
+  .auth-wrapper .custom-options-checkable .plan-price .pricing-value {
+    font-size: 3rem; }
+  
+  .auth-wrapper .custom-options-checkable .plan-price sup {
+    top: -1.5rem;
+    left: 0.2rem; }
+  
+  .auth-wrapper .custom-options-checkable .plan-price sub {
+    bottom: 0;
+    right: 0.14rem; }
+  
+  @media (min-width: 1200px) {
+    .auth-wrapper.auth-cover .auth-card {
+      width: 400px; } }
+  
+  @media (max-width: 575.98px) {
+    .auth-wrapper.auth-cover .brand-logo {
+      left: 1.5rem;
+      padding-left: 0; } }
+  
+  .auth-wrapper .auth-bg {
+    background-color: #fff; }
+  
+  .dark-layout .auth-wrapper .auth-bg {
+    background-color: #283046; }
+  
+  @media (max-height: 825px) and (max-width: 991.98px) {
+    .dark-layout .auth-wrapper .auth-inner {
+      background-color: #283046; }
+    .auth-wrapper .auth-bg {
+      padding-top: 3rem;
+      margin: auto 0; }
+    .auth-wrapper .auth-inner {
+      background-color: #fff; }
+    .auth-wrapper.auth-cover .auth-inner {
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+    .auth-wrapper.auth-cover .brand-logo {
+      position: relative;
+      left: 0;
+      padding-left: 1.5rem; } }
