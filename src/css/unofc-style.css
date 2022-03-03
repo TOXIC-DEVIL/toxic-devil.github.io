@@ -1,0 +1,47 @@
+.grad {
+	height: 170px;
+	width: 170px;
+	background: linear-gradient(180deg, #21db7b 80%, #db21a0);
+	position: absolute;   
+    border-radius: 9000px;
+}
+
+.spin {
+  animation-duration: 1s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rot {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rot {
+    0% { -moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes rot {
+    0% {-o-transform: rotate(0deg);}
+    100% {-o-transform: rotate(360deg);}
+}
+@keyframes rot {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg);}
+}
+
+#b{
+    -webkit-animation: rot 20s infinite;
+    -moz-animation:    rot 20s infinite;
+    -o-animation:      rot 20s infinite;
+    animation:         rot 20s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
